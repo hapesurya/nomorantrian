@@ -1,0 +1,33 @@
+{% extends "base_antrian.html" %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<!--Breadcrumb-->
+<div class="container">
+    <div class="row">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--Container-->
+<div class="container text-center">
+    <div class="row align-items-start">
+        <div class="col">
+            <h1>Pilih Layanan Yang Dituju</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="/service1" class="btn btn-primary">Service 1</i></a>
+            <a href="/service2" class="btn btn-secondary">Service 2</a>
+            <a href="/service3" class="btn btn-warning">Service 3</a>
+        </div>
+    </div>
+</div>
+{% endblock%}

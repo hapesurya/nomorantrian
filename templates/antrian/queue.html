@@ -1,0 +1,27 @@
+{% extends "base_antrian.html" %}
+
+{% block head %}
+    <title>Queue Number</title>
+{% endblock %}
+
+{% block body %}
+<!--Container-->
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+      <h1>Antrian Anda</h1>
+    </div>
+  </div>
+  <div class="row align-items-start">
+    <div class="col">
+      <h3>Nomor</h3>
+      <h2>Ke {{ queue_number }}</h2>
+    </div>
+  </div>
+  <div class="row align-items-start">
+    <div class="col">
+      <a href="/" class="btn btn-danger">Kembali Ke Menu Awal</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
