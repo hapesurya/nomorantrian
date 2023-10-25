@@ -31,6 +31,7 @@
   <div class="row">
     <div class="d-grid gap-2 col-6 mx-auto">
       <form method="POST" action="/{{ service_key }}">
+        <input type="hidden" name="tipelayanan" value="{{ tipelayanan }}">
         <button type="submit">Ambil Nomor Antrian</button>
       </form>
       <a href="/" class="btn btn-danger">Kembali Ke Menu Awal</a>
